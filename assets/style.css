@@ -33,15 +33,33 @@ h2 {
 #menu a{
     text-decoration: none;
     color: inherit;
+}
 #menu a:hover{
     border-bottom: 1px solid #777777;
 }
-.active  {
-    border-bottom: 1px solid #777777;
+.active{
+    border-bottom: 1px solid #1e12c9;
 }
-
-#libella-video{
-    height: 300px;
+#libella-video1{
+    height: 600px;
     width: 100%;
-    
+    animation-name: libella-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+        
+}
+#libella-zoom{
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    float: center;
+}
+@keyframes libella-zoom{
+   from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
 }
